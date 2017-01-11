@@ -34,6 +34,8 @@ asyncFunction()
 .catch(error => {...});
 ```
 
+#### .then()
+Always returns a Promise, alows you to chain method calls.
 
 
 
