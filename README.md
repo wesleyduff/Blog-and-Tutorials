@@ -11,8 +11,7 @@ Promise has been spec that has been created called [Promise/A+](https://promises
 There are frameworks for you to use which include
 + [Q](https://github.com/kriskowal/q)
 + [Bluebird](https://github.com/petkaantonov/bluebird)
-+ [RSVP](https://github.com/tildeio/rsvp.js/)
-
++ [RSVP](https://github.com/tildeio/rsvp.js)
 
 With ES6 and Babel, there is no need to use a framework.
 
