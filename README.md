@@ -19,6 +19,7 @@ A promise can be in three states
 + pending
 + fulfilled
 + rejected
+
 A promise is pending if it is neither fulfilled nor rejected.
 
 ```javascript
