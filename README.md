@@ -7,6 +7,13 @@
 
 A Promise is an object that is used as a placeholder for the eventual results of a deferred (and possibly asynchronous) computation.
 An alternative to callbacks for delivering the results of an asynchronous computation.
+Promise has been spec that has been created called [Promise/A+](https://promisesaplus.com/)
+There are frameworks for you to use which include
++ [Q](https://github.com/kriskowal/q)
++ [Bluebird](https://github.com/petkaantonov/bluebird)
++ [RSVP](https://github.com/tildeio/rsvp.js/)
+With ES6 and Babel, there is no need to use a framework.
+
 A promise can be in three states
 + pending
 + fulfilled
