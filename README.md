@@ -84,7 +84,7 @@ Example:
 ```javascript
 //throwing exception causes promise to be rejected
 let promiseThrowsException = new Promise((resolve, reject) => {
-  if(false){
+  if(true){
     throw new Error('rejected!'); //same as rejection
   } else {
     resolve(2);
@@ -93,9 +93,28 @@ let promiseThrowsException = new Promise((resolve, reject) => {
 
 //.catch() handles the error thrown
 promiseThrowsException
-  .then((result) => result + 2)
+  .then(val => val + 2)
   .catch(err => console.log("error", err));
 ```
+[codepen](http://codepen.io/anon/pen/ygJjrG)
+
+```javascript
+//Error thrown in .then() Example
+let p2 = new Promise((resolve, reject) => {
+  resolve(2);
+});
+
+p2.then(val => {
+  return val++;
+})
+.then(val => {
+  throw new Error('thrown in .then() method');
+})
+.catch(err => {
+  console.log('ERROR : ', err);
+});
+```
+[codepen](http://codepen.io/anon/pen/OWXZqx)
 
 You can chain .then() methods because each returned value inside a .then() method is automatically wrapped into a new promise.
 The value gets passed inside a promise and that promise is then unwrapped to provide its value to the next .then() method.
