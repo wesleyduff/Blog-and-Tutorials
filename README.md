@@ -49,10 +49,10 @@ asyncFunction()
 #### .then()
 Always returns a Promise, allows you to chain method calls.
 
-Two parameters are optional but at least one has to be provided.
-The first parameter is a function that gets called when a promise has been resolved (successful).
-The second parameter is a function that gets called when a promise has been rejected (failure).
-By omitting the first parameter and passing in a **null** value, you can achieve the same effect as if you were catching the error with **.catch()**
+Two parameters are optional but at least one has to be provided.  
+The first parameter is a function that gets called when a promise has been resolved (successful).  
+The second parameter is a function that gets called when a promise has been rejected (failure).  
+By omitting the first parameter and passing in a **null** value, you can achieve the same effect as if you were catching the error with **.catch()**  
 
 
 
