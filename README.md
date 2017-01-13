@@ -49,6 +49,8 @@ myPromise
 .catch(err => console.log("rejected err:", err));
 
 ```
+[codepen](http://codepen.io/anon/pen/QdErXB)
+
 When you handle resolve or reject, you can reject or resolve any JavaScript object (string, number, function, object literal)
 
 #### .then()
@@ -135,6 +137,7 @@ p.then(val => {
   console.log('val ---- 2 --- : ', val);
 })
 ```
+[codepen](http://codepen.io/anon/pen/NdrMVM)
 
 What if you need to make an ajax call inside the second .then() and provide that value to another .then()
 Sometimes I have seen an instance where an async call would be made for an GUID, then we would need to make another async call to get the data for that GUID. Once that data comes back we may need to massage the data and map it to our own bindings.
