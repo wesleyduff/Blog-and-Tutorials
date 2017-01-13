@@ -47,7 +47,12 @@ asyncFunction()
 ```
 
 #### .then()
-Always returns a Promise, alows you to chain method calls.
+Always returns a Promise, allows you to chain method calls.
+
+Two parameters are optional but at least one has to be provided.
+The first parameter is a function that gets called when a promise has been resolved (successful).
+The second parameter is a function that gets called when a promise has been rejected (failure).
+By omitting the first parameter and passing in a **null** value, you can achieve the same effect as if you were catching the error with **.catch()**
 
 
 
@@ -56,6 +61,10 @@ links:
 + [Wikipedia on Promises](https://tc39.github.io/ecma262/#sec-promise-objects)
 
 *FAQs*
++ promise objects are **immutable**
++ we are guaranteed to receive a value (in contrast to events, which can raise race conditions)
 + promises start off in the pending state
-++ promise is then fulfilled or rejected. This state is referred to as **settled** and is not pending any longer.
-++ promise is then sent to one of two methods, fulfillReactions(result), rejectReactions(error) instead of success and failure actions.
+-- promise is then fulfilled or rejected. This state is referred to as **settled** and is not pending any longer.
+-- promise is then sent to one of two methods, fulfillReactions(result), rejectReactions(error) instead of success and failure actions.
++ Anytime you return a value from a **then** it is automatically wrapped in a promise.
++ If you throw an error inside a promise or inside a .then of a promise, the promise will be rejected and caught by the .catch() method.
