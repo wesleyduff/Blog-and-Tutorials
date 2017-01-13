@@ -29,13 +29,27 @@ Creating a promise.
 
 ```javascript
 
-//promise object
+let myPromise = new Promise((resolve, reject) => {
+  //do something with resolve and rejected
+  let fakeObj = {test: "example"};
+  if(typeof fakeObj === 'object'){
+    resolve(fakeObj)l
+  } else {
+    reject({
+      message: "typeof 'fakeObj' was not of type object",
+      cssStyle: "danger",
+      stackTrace: "myPromise line 31"
+    })
+  }
+});
 
-//call async func as show
-asyncFunction()
-.then(result => {...})
-.catch(error => {...});
+//handlers for myPromise
+myPromise
+.then(val => console.log("resolved value:", val))
+.catch(err => console.log("rejected err:", err));
+
 ```
+When you handle resolve or reject, you can reject or resolve any JavaScript object (string, number, function, object literal)
 
 #### .then()
 Always returns a Promise, allows you to chain method calls.  
