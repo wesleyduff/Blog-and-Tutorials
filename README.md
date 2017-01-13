@@ -25,20 +25,11 @@ A promise can be in three states
 
 A promise is pending if it is neither fulfilled nor rejected.
 
+Creating a promise.
+
 ```javascript
 
-//anync func
-function asyncFunction(){
-  return new Promise(
-    function(resolve, reject){
-      if(x){
-        resolve(result);
-      } else {
-        reject(result)
-      }
-    }
-  )
-}
+//promise object
 
 //call async func as show
 asyncFunction()
@@ -47,12 +38,50 @@ asyncFunction()
 ```
 
 #### .then()
-Always returns a Promise, allows you to chain method calls.
+Always returns a Promise, allows you to chain method calls.  
+If a .then() returns a value, the value is automatically wrapped in a promise and unwrapped to pass the value to further chaining.
 
 Two parameters are optional but at least one has to be provided.  
 The first parameter is a function that gets called when a promise has been resolved (successful).  
 The second parameter is a function that gets called when a promise has been rejected (failure).  
 By omitting the first parameter and passing in a **null** value, you can achieve the same effect as if you were catching the error with **.catch()**  
+
+Example:
+```javascript
+
+//throwing exception causes promise to be rejected
+let promiseThrowsException = new Promise((resolve, reject) => {
+  if(false){
+    throw new Error('rejected!'); //same as rejection
+  } else {
+    resolve(2);
+  }
+});
+
+//.catch() handles the error thrown
+promiseThrowsException
+  .then((result) => result + 2)
+  .catch(err => console.log("error", err));
+
+//null for resolve method and reject method added.
+//works the same as .catch()
+let autoResolvePromise = new Promise((resolve, reject) => resolve(5));
+
+autoResolvePromise
+  //leaving off the second parameter for an error
+  .then(val => console.log("fulfilled:", val))
+  //setting null as the first parameter and just accepting rejected state, just like .catch()
+  .then((null, err) => console.log("rejected:", err));
+
+
+```
+
+
+Example:
+```javascript
+
+```
+
 
 
 
