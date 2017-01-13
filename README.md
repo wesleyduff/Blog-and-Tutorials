@@ -53,7 +53,7 @@ When you handle resolve or reject, you can reject or resolve any JavaScript obje
 
 #### .then()
 Always returns a Promise, allows you to chain method calls.  
-If a .then() returns a value, the value is automatically wrapped in a promise and unwrapped to pass the value to further chaining.
+If a .then() returns a value, the value is automatically wrapped in a promise and unwrapped to pass the value to future .then() methods for further chaining.
 
 Two parameters are optional but at least one has to be provided.  
 The first parameter is a function that gets called when a promise has been resolved (successful).  
@@ -63,6 +63,25 @@ By omitting the first parameter and passing in a **null** value, you can achieve
 Example:
 ```javascript
 
+//null for resolve method and reject method added.
+//works the same as .catch()
+let autoResolvePromise = new Promise((resolve, reject) => resolve(5)); //this a promise that gest rosolved right away.
+
+autoResolvePromise
+  //leaving off the second parameter for an error
+  .then(val => console.log("fulfilled:", val))
+  //setting null as the first parameter and just accepting rejected state, just like .catch()
+  .then((null, err) => console.log("rejected:", err));
+
+
+```
+
+You can also handle errors in a better way by throwing errors.
+Anytime you throw an error inside a promise, the promise gets rejected at that moment.
+If you are chaining .then() methods and throw an error inside of one, you get directed strait to the .catch() method of the promise resolution.
+
+Example:
+```javascript
 //throwing exception causes promise to be rejected
 let promiseThrowsException = new Promise((resolve, reject) => {
   if(false){
@@ -76,18 +95,6 @@ let promiseThrowsException = new Promise((resolve, reject) => {
 promiseThrowsException
   .then((result) => result + 2)
   .catch(err => console.log("error", err));
-
-//null for resolve method and reject method added.
-//works the same as .catch()
-let autoResolvePromise = new Promise((resolve, reject) => resolve(5)); //this a promise that gest rosolved right away.
-
-autoResolvePromise
-  //leaving off the second parameter for an error
-  .then(val => console.log("fulfilled:", val))
-  //setting null as the first parameter and just accepting rejected state, just like .catch()
-  .then((null, err) => console.log("rejected:", err));
-
-
 ```
 
 You can chain .then() methods because each returned value inside a .then() method is automatically wrapped into a new promise.
