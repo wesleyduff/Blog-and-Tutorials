@@ -33,7 +33,7 @@ let myPromise = new Promise((resolve, reject) => {
   //do something with resolve and rejected
   let fakeObj = {test: "example"};
   if(typeof fakeObj === 'object'){
-    resolve(fakeObj)l
+    resolve(fakeObj);
   } else {
     reject({
       message: "typeof 'fakeObj' was not of type object",
@@ -79,7 +79,7 @@ promiseThrowsException
 
 //null for resolve method and reject method added.
 //works the same as .catch()
-let autoResolvePromise = new Promise((resolve, reject) => resolve(5));
+let autoResolvePromise = new Promise((resolve, reject) => resolve(5)); //this a promise that gest rosolved right away.
 
 autoResolvePromise
   //leaving off the second parameter for an error
@@ -90,12 +90,70 @@ autoResolvePromise
 
 ```
 
+You can chain .then() methods because each returned value inside a .then() method is automatically wrapped into a new promise.
+The value gets passed inside a promise and that promise is then unwrapped to provide its value to the next .then() method.
 
 Example:
 ```javascript
 
+let p = new Promise((resolve, reject) =>{
+  resolve(4);
+});
+
+p.then(val => {
+  console.log('val ---- 1 --- : ', val);
+  return val;
+})
+.then(val => { //val
+  val++;
+  console.log('val ---- 2 --- : ', val);
+})
 ```
 
+What if you need to make an ajax call inside the second .then() and provide that value to another .then()
+Sometimes I have seen an instance where an async call would be made for an GUID, then we would need to make another async call to get the data for that GUID. Once that data comes back we may need to massage the data and map it to our own bindings.
+Here is an advanced example of such a case.
+
+```javascript
+//simulate an async call that takes 1second
+let p = new Promise((resolve, reject) => {
+  setTimeout(function(){
+    resolve({data: {GUID: 1001, data: []}});
+  }, 1000);
+});
+
+p.then(val => {
+  console.log('Our value before we make the next async call  : ', val);
+
+  let p2 = new Promise((resolve, reject) => {
+    //randomuser.me is a free api to build fake profiles
+    $.ajax({
+      url: 'https://randomuser.me/api/',
+      dataType: 'json',
+      success: function(data) {
+        resolve(data);
+      }
+    });
+  });
+
+  //returning any value inside a .then() method wraps the value in a promise
+  return p2.then(data => {
+    //create a copy of val. That way we can see the differences in the console.
+    let returnval = Object.assign({}, val);
+    returnval.data = data;
+    return returnval;
+  });
+
+}).
+//the promise returned above is unwrapped and the value is provided
+then(val => {
+  console.log('this  data  can now be mapped here : ', val);
+})
+//catch any errors that happen
+.catch(err => console.log('error : ', err));
+
+```
+[codepen](http://codepen.io/anon/pen/KaMowd)
 
 
 
