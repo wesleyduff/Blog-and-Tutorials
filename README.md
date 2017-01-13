@@ -64,7 +64,7 @@ links:
 + promise objects are **immutable**
 + we are guaranteed to receive a value (in contrast to events, which can raise race conditions)
 + promises start off in the pending state
--- promise is then fulfilled or rejected. This state is referred to as **settled** and is not pending any longer.
--- promise is then sent to one of two methods, fulfillReactions(result), rejectReactions(error) instead of success and failure actions.
+++ promise is then fulfilled or rejected. This state is referred to as **settled** and is not pending any longer.
+++ promise is then sent to one of two methods, fulfillReactions(result), rejectReactions(error) instead of success and failure actions.
 + Anytime you return a value from a **then** it is automatically wrapped in a promise.
 + If you throw an error inside a promise or inside a .then of a promise, the promise will be rejected and caught by the .catch() method.
