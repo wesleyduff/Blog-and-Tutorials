@@ -184,6 +184,58 @@ then(val => {
 ```
 [codepen](http://codepen.io/anon/pen/KaMowd)
 
+###You can handle many async calls at once with promise.all.
+Promise.all allows you to return all values from many async calls at one time.
+Once *ALL* async calls have completed the "then" method gets invoked with an array of all resolved values.
+**However**, if any async call throws an error, the .catch method will catch the error and invoke its own function.  
+Here is an example of three objects that get resolved and their values passed.  
+
+```javascript
+//This document shows how to handle many async calls with the promise.all method.
+const p1 = Promise.resolve(3),
+  p2 = 1337,
+  p3 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 100, "foo");
+  });
+
+const all_promises = [p1, p2, p3];
+
+//handle all promises and return an array of results to the resolve method
+Promise.all(all_promises).then(values => {
+  console.log('Values : ', values);
+  console.log('Is Array : ', values.hasOwnProperty(length) && typeof values === 'object');
+});
+
+```
+[codepen](http://codepen.io/anon/pen/VPzevm)  
+
+**Error Thrown** example where a .catch is used to catch all errors that might have happened during any async call.  
+The first error that is throw causes the promise.all to break and move right into the catch method.  
+Example : throwing error in second promise and catch method doing what it does best.  
+
+```javascript
+const p1 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 1000, "first promise success");
+}),
+  p2 = new Promise((resolve, reject) => {
+    throw new Error('Thrown error in promise number 2');
+  }),
+  p3 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 1000, "third promise success never gets called");
+  });
+
+//Load up all the promises
+Promise.all([p1, p2, p3])
+  .then(result => {
+    console.log('We do not get a result due to the error thrown in p2', result);
+  })
+  .catch(err => {
+    console.log('-----------------ERROR -------------------------- \n We catch the error thrown in P2 \r\n err : ', err);
+  });
+```
+[codepen](http://codepen.io/anon/pen/PWKZBB)
+
+
 
 
 links:
