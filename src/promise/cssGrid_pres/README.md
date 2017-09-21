@@ -31,7 +31,7 @@
 
 **Flexbox cures these issues**
 - Makes flex items grow to fill available space or shrink to avoid overflow
-- It give flexitems proportional dimensions
+- It gives flex items proportional dimensions
 - Flex items can be laid out in any direction, ordered according to visual preference (helps with responsive theming)
 
 **Css Grid Layout : The future of css layout**
