@@ -30,7 +30,7 @@
 <br/>
 
 # Why?
-**_flexbox_**
+The only cross-browser reliable tools available for creating CSS layouts were things like *floats*. This style of CSS layouts were using in bulky css frameworks and is now a thing of the past with the use of modern browsers.
 
 <br/>
 <br/>
