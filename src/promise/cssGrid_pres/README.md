@@ -34,7 +34,7 @@
 
 _Example of using float layouts_
 
-<img src="https://github.com/wesleyduff/OKR-2017/blob/flexbox-grid/src/promise/cssGrid_pres/assets/bootstrap_example.png" alt="code-pen demo bootstrap floats">
+<a href="https://codepen.io/wesduff/pen/YrWBYN" target="_blank"><img src="https://github.com/wesleyduff/OKR-2017/blob/flexbox-grid/src/promise/cssGrid_pres/assets/bootstrap_example.png" alt="code-pen demo bootstrap floats"></a>
 
 <br/>
 
@@ -128,6 +128,11 @@ article > div > div:nth-child(3) {
 <br/>
 
 _Example of using flexbox layouts_
+
+<a href="https://codepen.io/wesduff/pen/Ewydjz" target="_blank"><img src="https://github.com/wesleyduff/OKR-2017/blob/flexbox-grid/src/promise/cssGrid_pres/assets/bootstrap_example.png" alt="code-pen demo bootstrap floats"></a>
+
+<br />
+
 ```html
 
 <header>header</header>
