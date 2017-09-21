@@ -151,6 +151,110 @@ _Example of using flexbox layouts_
 <footer>footer</footer>
 
 ```
+
+**CSS**
+```css
+/* Mobile first */
+body {
+  font: 24px Helvetica;
+  background: #999999;
+}
+
+.main {
+  min-height: 97vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+}
+ 
+.main > aside, header, footer {
+  display: none;
+}
+
+.main > nav, .main > article {
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid #8888bb;
+    border-radius: 7pt;
+}
+
+.main > nav {
+  background: #ccccff;
+  flex:1 1 10vh;
+}
+
+.main > article {
+  background: #dddd88;
+  flex:3 1 70vh;
+}
+
+article > div {
+  display:flex;
+  flex-flow:column;
+  border:1px solid black;
+  justify-content: space-between;
+  height:70vh;
+ }
+
+article > div div{
+  color:white;
+  text-align:center;
+  border:1px solid black;
+}
+article > div div:nth-child(1){
+  background-color:#42f4c2;
+}
+article > div div:nth-child(2){
+  background-color:#0e64ef;
+}
+article > div div:nth-child(3){
+  background-color:#399634;
+}
+      /*Tablet*/
+@media (min-width: 640px) {
+  
+  .main {
+    flex-flow: row;
+  }
+  header, footer {
+    display: block;
+  }
+  
+  article > div {
+    display:flex;
+    flex-flow:row;
+  }
+  
+  article > div div{
+    width:30%;
+  }
+  
+  header, footer {
+    margin: 4px;
+    padding: 5px;
+    min-height: 10vh;
+    border: 1px solid #eebb55;
+    border-radius: 7pt;
+    background: #ffeebb;
+  }
+}
+
+@media (min-width: 940px) {
+  .main > aside {
+    display:block;
+  }
+  .main > aside {
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid #8888bb;
+    border-radius: 7pt;
+    background: #ccccff;
+    flex: 1 6 20%;
+  }
+}
+```
+
 <br/>
 <br/>
 ---
