@@ -36,7 +36,7 @@
 <br/>
 The good folks at w3c are still working on finalizing how browsers should handle this new feature.
 You can read more about CSS Grid Layout from the links below.
-- [w3c](https://drafts.csswg.org/css-grid/)
+- [w3c specs](https://drafts.csswg.org/css-grid/)
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 - [CSS-TRICKS](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [Grid by Example](https://gridbyexample.com/examples/)
@@ -268,13 +268,37 @@ article > div div:nth-child(3){
 
 <br/>
 <br/>
+
 ---
 <br/>
 <br/>
 
 # Why?
-The only cross-browser reliable tools available for creating CSS layouts were things like *floats*. This style of CSS layouts were using in bulky css frameworks and is now a thing of the past with the use of modern browsers.
+The only cross-browser reliable tools available for creating CSS layouts were things like *floats*. Styling CSS layouts using a bulky css framework is now a thing of the past with the use of modern browsers. Why use a framework when a perfect layout tool is built in and ready.
+<br/>
+
+CSS Grid Layout would be ideal, but the world is not yet ready. Till then, _flexbox_ is the tool of choice.
 
 <br/>
 <br/>
 ---
+
+---
+<br/>
+<br/>
+
+# The Goods
+
+Here is a list of links to help you on your path to layout bliss.
+
+- [w3c specs](https://www.w3.org/TR/css-flexbox-1/)
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
+- [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [I found this tutorial to be helpful](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
+- [Great Pluralsight video](https://www.pluralsight.com/courses/modern-web-layout-flexbox-css-grid)
+- [Linked In videos provided by Healthgrades access](https://www.linkedin.com/learning/search?keywords=flexbox&u=2047042)
+
+<br/>
+<br/>
+---
+
