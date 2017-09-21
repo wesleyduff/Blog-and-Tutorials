@@ -43,6 +43,7 @@ You can read more about CSS Grid Layout from the links below.
 
 <br/>
 <br/>
+
 _Example of using float layouts_
 
 <a href="https://codepen.io/wesduff/pen/YrWBYN" target="_blank"><img src="https://github.com/wesleyduff/OKR-2017/blob/flexbox-grid/src/promise/cssGrid_pres/assets/bootstrap_example.png" alt="code-pen demo bootstrap floats"></a>
