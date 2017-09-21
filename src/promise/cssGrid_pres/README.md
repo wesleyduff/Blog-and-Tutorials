@@ -129,7 +129,7 @@ article > div > div:nth-child(3) {
 
 _Example of using flexbox layouts_
 
-<a href="https://codepen.io/wesduff/pen/Ewydjz" target="_blank"><img src="https://github.com/wesleyduff/OKR-2017/blob/flexbox-grid/src/promise/cssGrid_pres/assets/bootstrap_example.png" alt="code-pen demo bootstrap floats"></a>
+<a href="https://codepen.io/wesduff/pen/Ewydjz" target="_blank"><img src="https://github.com/wesleyduff/OKR-2017/blob/flexbox-grid/src/promise/cssGrid_pres/assets/flexbox_layout.png" alt="code-pen demo bootstrap floats"></a>
 
 <br />
 
