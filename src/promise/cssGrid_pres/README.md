@@ -28,7 +28,7 @@
 - Content centering
 
 **Flexbox cures these issues**
-- Makes flex items grow to fill available space pr shrink to avoid overflow
+- Makes flex items grow to fill available space or shrink to avoid overflow
 - It give flexitems proportional dimensions
 - Flex items can be laid out in any direction, ordered according to visual preference (helps with responsive theming)
 
@@ -275,9 +275,19 @@ article > div div:nth-child(3){
 
 # Why?
 The only cross-browser reliable tools available for creating CSS layouts were things like *floats*. Styling CSS layouts using a bulky css framework is now a thing of the past with the use of modern browsers. Why use a framework when a perfect layout tool is built in and ready.
+
 <br/>
 
 CSS Grid Layout would be ideal, but the world is not yet ready. Till then, _flexbox_ is the tool of choice.
+
+<br/>
+
+You may ask, why CSS Grid Layout and not expand flexbox? 
+
+<br/>
+Flexbox is _unidirectional_. Flexbox can only layout your HTML elements in one specific direction. 
+
+CSS Grid Layout is _multidirectional_. CSS Grid Layout can layout your HTML elements in two directions, x and y axis.
 
 <br/>
 <br/>
