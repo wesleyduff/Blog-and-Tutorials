@@ -1,4 +1,6 @@
-[grumpy old man](https://github.com/wesleyduff/OKR-2017/blob/flexbox-grid/src/promise/cssGrid_pres/assets/grumpy-confused-cat.jpg "Grumpy Old Man")
+<img src="https://github.com/wesleyduff/OKR-2017/blob/flexbox-grid/src/promise/cssGrid_pres/assets/grumpy-confused-cat.jpg" alt="Grumpy Old Man" />
+<br/>
+<br/>
 ---
 # CSS GRID SYSTEMS 
 
