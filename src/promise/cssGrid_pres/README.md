@@ -269,6 +269,10 @@ article > div div:nth-child(3){
 }
 ```
 
+<br />
+
+What are some things we see here that are different than the _float_ style layout?
+
 <br/>
 <br/>
 
