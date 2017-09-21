@@ -33,6 +33,11 @@
 - Flex items can be laid out in any direction, ordered according to visual preference (helps with responsive theming)
 
 _Example of using float layouts_
+
+<img src="https://github.com/wesleyduff/OKR-2017/blob/flexbox-grid/src/promise/cssGrid_pres/assets/bootstrap_example.png" alt="code-pen demo bootstrap floats">
+
+<br/>
+
 **html**
 ```html<header class="hidden-xs">header</header>
 <div class='main container'>
