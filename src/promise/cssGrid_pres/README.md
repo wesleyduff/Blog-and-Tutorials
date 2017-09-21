@@ -21,8 +21,126 @@
 <br/>
 
 # Well What Should We Use?
-**_flexbox_**
+**Problems with float layouts**
+- Difficulty with containment
+- Source order dependence
+- Equal height columns issues
+- Content centering
 
+**Flexbox cures these issues**
+- makes flex items grow to fill available space pr shrink to avoid overflow
+- It give flexitems proportional dimensions
+- Flex items can be laid out in any direction, ordered according to visual preference (helps with responsive theming)
+
+_Example of using float layouts_
+**html**
+```html<header class="hidden-xs">header</header>
+<div class='main container'>
+  <nav class="col-xs-12">nav</nav>
+  <article class="col-xs-12 col-md-9">
+    <h1>Article</h1>
+    <div class="content-container col-xs-12">
+      <div class="col-xs-12 col-sm-4"><h2>container 1</h2></div>
+      <div class="col-xs-12 col-sm-4"><h2>container 2</h2></div>
+      <div class="col-xs-12 col-sm-4"><h2>container 3</h2></div>
+    </div>
+  </article>
+  <aside class="hidden-xs hidden-sm col-md-3">aside</aside>
+</div>
+<footer class="hidden-xs">footer</footer>
+
+```
+**CSS**
+```css
+/* mobile first */
+nav{
+  background-color: #d5ea19;
+}
+
+article {
+  background-color:#eaf2a7;
+  padding:10px;
+  margin-top:10px;
+  height:100vh;
+}
+
+article > div > div {
+  border:1px solid black;
+  margin:10px 0;
+}
+
+article > div > div:nth-child(1){
+  background-color:#f1cca7;
+}
+
+article > div > div:nth-child(2){
+  background-color:#eab37c;
+}
+
+article > div > div:nth-child(3) {
+  background-color:#e28b34;
+}
+
+@media (min-width: 640px) {
+  h2 {
+    font-size:2rem;
+  }
+  header, footer {
+    height:5rem;
+    background-color:#4ae2d2;
+    text-align:center;
+    vertical-align:middle;
+    padding-top:15px;
+    font-weight:800;
+  }
+  
+  article {
+    height:70vh;
+  }
+  
+  article > div > div {
+    height:21.5rem;
+  }
+  
+}
+
+@media (min-width: 940px) {
+   aside {
+    height:70vh;
+  }
+  
+  aside {
+    background-color:#b1ba71;
+    margin-top:10px;
+    
+  }
+}
+```
+
+
+
+<br/>
+<br/>
+
+_Example of using flexbox layouts_
+```html
+
+<header>header</header>
+<div class='main'>
+  <nav>nav</nav>
+  <article>
+    <h1>Article</h1>
+    <div class="content-container">
+      <div><h2>flex1</h2></div>
+      <div><h2>flex 2</h2></div>
+      <div><h2>flex 3</h2></div>
+    </div>
+  </article>
+  <aside>aside</aside>
+</div>
+<footer>footer</footer>
+
+```
 <br/>
 <br/>
 ---
