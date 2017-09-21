@@ -281,13 +281,13 @@ CSS Grid Layout would be ideal, but the world is not yet ready. Till then, _flex
 
 <br/>
 <br/>
----
 
 ---
+
 <br/>
 <br/>
 
-# The Goods
+# The Goods - for Flexbox
 
 Here is a list of links to help you on your path to layout bliss.
 
@@ -300,5 +300,4 @@ Here is a list of links to help you on your path to layout bliss.
 
 <br/>
 <br/>
----
 
