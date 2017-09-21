@@ -292,9 +292,9 @@ CSS Grid Layout would be ideal, but the world is not yet ready. Till then, _flex
 You may ask, why CSS Grid Layout and not expand flexbox? 
 
 <br/>
-Flexbox is _unidirectional_ . Flexbox can only layout your HTML elements in one specific direction. 
+Flexbox is unidirectional. Flexbox can only layout your HTML elements in one specific direction. 
 
-CSS Grid Layout is _multidirectional_ . CSS Grid Layout can layout your HTML elements in two directions, x and y axis.
+CSS Grid Layout is multidirectional. CSS Grid Layout can layout your HTML elements in two directions, x and y axis.
 
 <br/>
 <br/>
