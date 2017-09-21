@@ -11,7 +11,7 @@
 |&lt;table&gt; | Once this was the only way to create a grid to layout your HTML. The browser became smarter and included new CSS features and using tables to perform layou was a thing of the past|
 | percentage based w/ floats<br>[bootstrap grid](https://v4-alpha.getbootstrap.com/layout/grid/) | This is what is mostly used out in the wild. Bootstrap is a common CSS framework used by many companies and has been the standard for a few years. However, **float** is not meant to be used for layout. |
 | [flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)  | Here comes Flexbox: Flexbox was created for **layout**. Simpler, maintainable and *build into your browser* <br/>&mp; [Can I use ~ flexbox](http://caniuse.com/#search=flexbox)<br/> &mp;[flex bugs : community tracking](https://github.com/philipwalton/flexbugs)|
-| [cssGrid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)  | The future is coming where flexbox will be **_obsolete_**. cssGrid is a true css grid currently in the finishing stages of consideration. You can start using cssGrid now, but you have to turn this feature on inside your browser.<br/> &mp; [Can I use ~ cssGrid](http://caniuse.com/#search=css%20grid) <br/>&mp;[grid bugs : community tracking](https://github.com/rachelandrew/gridbugs)|
+| [cssGrid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) <br/><br/> [w3c css grid layout](https://drafts.csswg.org/css-grid/) | The future is coming where flexbox will be **_obsolete_**. cssGrid is a true css grid currently in the finishing stages of consideration. You can start using cssGrid now, but you have to turn this feature on inside your browser.<br/> &mp; [Can I use ~ cssGrid](http://caniuse.com/#search=css%20grid) <br/>&mp;[grid bugs : community tracking](https://github.com/rachelandrew/gridbugs)|
 
 <br/>
 <br/>
@@ -28,10 +28,21 @@
 - Content centering
 
 **Flexbox cures these issues**
-- makes flex items grow to fill available space pr shrink to avoid overflow
+- Makes flex items grow to fill available space pr shrink to avoid overflow
 - It give flexitems proportional dimensions
 - Flex items can be laid out in any direction, ordered according to visual preference (helps with responsive theming)
 
+**Css Grid Layout : The future of css layout**
+<br/>
+The good folks at w3c are still working on finalizing how browsers should handle this new feature.
+You can read more about CSS Grid Layout from the links below.
+- [w3c](https://drafts.csswg.org/css-grid/)
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+- [CSS-TRICKS](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [Grid by Example](https://gridbyexample.com/examples/)
+
+<br/>
+<br/>
 _Example of using float layouts_
 
 <a href="https://codepen.io/wesduff/pen/YrWBYN" target="_blank"><img src="https://github.com/wesleyduff/OKR-2017/blob/flexbox-grid/src/promise/cssGrid_pres/assets/bootstrap_example.png" alt="code-pen demo bootstrap floats"></a>
