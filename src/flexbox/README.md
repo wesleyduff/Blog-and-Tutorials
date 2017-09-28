@@ -9,3 +9,6 @@ _Pre Req_
 
 Code Pen : Base HTML for practice:
 [5 boxes](https://codepen.io/wesduff/pen/vemGbo)
+
+Code Pen : Playing with nested display:flexbox
+[codepen](https://codepen.io/wesduff/pen/boWwOJ)
