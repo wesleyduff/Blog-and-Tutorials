@@ -7,4 +7,5 @@ _Pre Req_
 - CSS basics
 - HTML 5 basics
 
-Code Pen.
+Code Pen : Base HTML for practice:
+[5 boxes](https://codepen.io/wesduff/pen/vemGbo)
