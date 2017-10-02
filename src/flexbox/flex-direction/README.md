@@ -30,6 +30,6 @@ Flex direction is set on the flex container. You can set the direction to be
 <br />
 <br />
 
-**Finished** : [code pen - flex direction : column :  example ](https://codepen.io/wesduff/pen/VMzQWr)
+**Finished** : [code pen - flex direction : column :  example ](https://codepen.io/wesduff/pen/PJKQOy)
 <br />
 <hr />
