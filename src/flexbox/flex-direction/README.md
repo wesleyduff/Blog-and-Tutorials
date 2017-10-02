@@ -64,6 +64,6 @@ Flex direction is set on the flex container. You can set the direction to be
 <br />
 <br />
 
-**Finished** : [code pen - flex direction : column :  example ](https://codepen.io/wesduff/pen/PJKQOy)
+**Finished** : [code pen - flex direction : column reverse :  example ](https://codepen.io/wesduff/pen/gGxvvB)
 <br />
 <hr />
