@@ -6,17 +6,9 @@ It is the DOM element that wraps its child elements. The __flex container__ must
 
 *display: flex* : sets a block level element. This element will fill the allowed space of its containing element.
 
-*display: inline-flex : sets the DOM element to a  __shrink wrapped__ state. Will only be as large as its containing elements. 
+*display: inline-flex* : sets the DOM element to a  __shrink wrapped__ state. Will only be as large as its containing elements. 
 
 # What are Flex Items?
 
 The children of the flex container. These items can be aligned via the **Main Access** and the **Cross Access**. 
-
-Flex items can be layed out by the flex container with
-- align-items
-- justify-content
-- align-content (only aligned by the lines of the flex items)
-
-A __Flex Item__ can control its own positioning within the flex container using
-- align-self
 
