@@ -17,4 +17,5 @@ Flex direction is set on the flex container. You can set the direction to be
 <br />
 <hr />
 <br />
+
 **Finished** : [code pen - flex direction example ](https://codepen.io/wesduff/pen/VMzQWr)
