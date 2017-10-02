@@ -10,6 +10,10 @@ Order only re-orders your DOM elements on the render, the order is not changed f
 order: <integer>
 ```
 
+You can change the __ordinal group__ of your DOM element by changing the integer on the order css declaration.
+
+Ordinal groups start with ``` 0 ```. All flex items start in ordinal group ``` 0 ```.
+
 <hr />
 <br />
 <br />
@@ -24,6 +28,6 @@ order: <integer>
 <br />
 <br />
 
-**Finished** : [code pen - flex direction : row : example ](https://codepen.io/wesduff/pen/VMzQWr)
+**Finished** : [code pen - flex : order : example ](https://codepen.io/wesduff/pen/rGzJQW)
 <br />
 <hr />
