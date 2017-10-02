@@ -12,9 +12,24 @@ Flex direction is set on the flex container. You can set the direction to be
 
 ### Set a flex-direction of row
 - Should have your boxes stacked next to eachother
-- Should have the **flex container** take up the full width of the parent container which if the __body__.
+- Should have the **flex container** take up the full width of the parent container which is the __body__.
 
+<br />
+<br />
+**Finished** : [code pen - flex direction : row : example ](https://codepen.io/wesduff/pen/VMzQWr)
 <br />
 <hr />
 <br />
-**Finished** : [code pen - flex direction example ](https://codepen.io/wesduff/pen/VMzQWr)
+<br />
+
+### Set a flex-direction of column
+- Should have your boxes stacked ontop to eachother
+- Should have the **flex container** take up the full width of the parent container which is the __body__.
+
+<br />
+<br />
+**Finished** : [code pen - flex direction : column :  example ](https://codepen.io/wesduff/pen/VMzQWr)
+<br />
+<hr />
+
+
