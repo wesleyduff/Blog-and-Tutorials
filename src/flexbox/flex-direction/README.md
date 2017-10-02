@@ -6,6 +6,8 @@ Flex direction is set on the flex container. You can set the direction to be
 - column: stacks your items ontop of eachother
 - column-reverse: stacks your items ontop of eachother in reverse order
 
+<hr />
+
 ### Set a flex-direction of row
 - Should have your boxes stacked next to eachother
 - Should have the **flex container** take up the full width of the parent container which is the __body__.
