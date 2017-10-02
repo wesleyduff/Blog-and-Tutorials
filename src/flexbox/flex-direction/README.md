@@ -7,6 +7,8 @@ Flex direction is set on the flex container. You can set the direction to be
 - column-reverse: stacks your items ontop of eachother in reverse order
 
 <hr />
+<br />
+<br />
 
 ### Set a flex-direction of row
 - Should have your boxes stacked next to eachother
