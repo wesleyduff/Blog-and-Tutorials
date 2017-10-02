@@ -8,7 +8,7 @@ Flex direction is set on the flex container. You can set the direction to be
 
 ## Start here
 
-(code pen - basic flex layout )[https://codepen.io/wesduff/pen/vemGbo]
+[code pen - basic flex layout ](https://codepen.io/wesduff/pen/vemGbo)
 
 ### Set a flex-direction of row
 - Should have your boxes stacked next to eachother
