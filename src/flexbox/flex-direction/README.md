@@ -10,7 +10,7 @@ Flex direction is set on the flex container. You can set the direction to be
 - Should have your boxes stacked next to eachother
 - Should have the **flex container** take up the full width of the parent container which is the __body__.
 
-[code pen - basic flex layout ](https://codepen.io/wesduff/pen/GMvQmG)
+**start here: ** [code pen - basic flex layout ](https://codepen.io/wesduff/pen/GMvQmG)
 
 <br />
 <br />
@@ -25,7 +25,7 @@ Flex direction is set on the flex container. You can set the direction to be
 - Should have your boxes stacked ontop to eachother
 - Should have the **flex container** take up the full width of the parent container which is the __body__.
 
-[code pen - basic flex layout ](https://codepen.io/wesduff/pen/GMvQmG)
+**start here :** [code pen - basic flex layout ](https://codepen.io/wesduff/pen/GMvQmG)
 
 <br />
 <br />
