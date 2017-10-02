@@ -40,6 +40,6 @@ If you set the flex grow property on a single item to a value of ``` 2 ```. this
 <br />
 <br />
 
-**Finished** : [code pen - flex direction : row : example ](https://codepen.io/wesduff/pen/VMzQWr)
+**Finished** : [code pen - flex direction : row : example ](https://codepen.io/wesduff/pen/pWraBg)
 <br />
 <hr />
