@@ -8,7 +8,7 @@ If a flex-shrink is set, the shrinkage will not go below the flex-basis amount.
 You have a few items you can use to set your flex-basis
 - auto : This says, look at my height or width property
 - content: Set this based on my content
-- <length> : You can set any type of length. %, em, etc..
+- &lt;length&gt; : You can set any type of length. %, em, etc..
 
 <hr />
 <br />
