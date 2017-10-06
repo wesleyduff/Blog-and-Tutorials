@@ -14,61 +14,18 @@ You have a few items you can use to set your flex-basis
 <br />
 <br />
 
-### Set a flex-direction of row
+### Set a flex-basis
 - Should have your boxes stacked next to eachother
 - Should have the **flex container** take up the full width of the parent container which is the __body__.
+- Should have the first flex item's flex-basis set to 100px.
 
 **start here:** [code pen - basic flex layout ](https://codepen.io/wesduff/pen/GMvQmG)
 
 <br />
 <br />
 
-**Finished** : [code pen - flex direction : row : example ](https://codepen.io/wesduff/pen/VMzQWr)
+**Finished** : [code pen - flex direction : row : example ](https://codepen.io/wesduff/pen/Nayjqp)
 <br />
 <hr />
 <br />
 <br />
-
-### Set a flex-direction of column
-- Should have your boxes stacked ontop to eachother
-- Should have the **flex container** take up the full width of the parent container which is the __body__.
-
-**start here :** [code pen - basic flex layout ](https://codepen.io/wesduff/pen/GMvQmG)
-
-<br />
-<br />
-
-**Finished** : [code pen - flex direction : column :  example ](https://codepen.io/wesduff/pen/PJKQOy)
-<br />
-<hr />
-<br />
-<br />
-
-### Set a flex-direction of row - _REVERSE_
-- Should have your boxes stacked ontop to eachother - with **flex 1** on the far right side and reading right to left.
-- Should have the **flex container** take up the full width of the parent container which is the __body__.
-
-**start here :** [code pen - basic flex layout ](https://codepen.io/wesduff/pen/GMvQmG)
-
-<br />
-<br />
-
-**Finished** : [code pen - flex direction : row reverse :  example ](https://codepen.io/wesduff/pen/ZXJrxQ)
-<br />
-<hr />
-<br />
-<br />
-
-### Set a flex-direction of column - _REVERSE_
-- Should have your boxes stacked ontop to eachother - with **flex 1** on the bottom.
-- Should have the **flex container** take up the full width of the parent container which is the __body__.
-
-**start here :** [code pen - basic flex layout ](https://codepen.io/wesduff/pen/GMvQmG)
-
-<br />
-<br />
-
-**Finished** : [code pen - flex direction : column reverse :  example ](https://codepen.io/wesduff/pen/gGxvvB)
-
-<br />
-<hr />
