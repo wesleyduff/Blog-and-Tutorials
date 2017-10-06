@@ -14,21 +14,6 @@ Here are the available options:
 <br />
 <br />
 
-### Set a flex-direction of row and set flex-grow.
-- Should have the **flex container** take up the full width of the parent container which is the __body__.
-- Set the first flex item to take up a third of the available space.
-- Set all the others to take up an equal share of what is left.
-- Set the flex items to wrap with __flex-wrap__ to __wrap__;
-
-**start here:** [code pen - basic flex layout ](https://codepen.io/wesduff/pen/GMvQmG)
-
-<br />
-<br />
-
-**Finished** : [code pen - flex : flex-grow : equal : example ](https://codepen.io/wesduff/pen/eGEVXB)
-<br />
-<hr />
-
 <br/>
 <br/>
 
