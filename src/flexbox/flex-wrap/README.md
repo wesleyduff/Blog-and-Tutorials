@@ -18,7 +18,7 @@ Here are the available options:
 <br/>
 
 ### Set a flex-wrap on flex items
-- Should have your boxes stacked next to eachother
+- Should have your boxes stacked next to eachother (row)
 - Should have the **flex container** set to a width of 600px
 - Should have each flex item take up the same amount of available space.
 - Shold have the first flex item take up 340px.
