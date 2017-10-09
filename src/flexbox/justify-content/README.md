@@ -37,7 +37,7 @@ Here are the available options:
 <br />
 <br />
 <hr />
-'''css
+'''html
 article {
   border:3px dashed #ccc;
   display:flex;
