@@ -21,14 +21,57 @@ Here are the available options:
 <br/>
 <br/>
 
-### Set a flex-wrap on flex items
+### Set flex items to align to the start of the main axis
 - Should have your boxes stacked next to eachother (row)
+- Should have your flex items start at the start of the main axis
 
 **start here:** [code pen - basic flex layout ](https://codepen.io/wesduff/pen/GMvQmG)
 
 <br />
 <br />
-
-**Finished** : [code pen - flex wrap : example ](https://codepen.io/wesduff/pen/rGJWgE)
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <br />
 <hr />
+'''css
+article {
+  border:3px dashed #ccc;
+  display:flex;
+  justify-content:flex-start;
+  
+}
+
+article > div {
+  padding: 15px;
+  margin: 0;
+  color:#ddd;
+  font:1.5em bold helvetica, tahoma;
+  text-transform:uppercase;
+  width:100px;
+}
+
+article > div:nth-child(1){
+  background-color:#002e43;
+}
+
+article > div:nth-child(2){
+  background-color:#406378;
+}
+article > div:nth-child(3){
+  background-color:#6a90a9;
+}
+article > div:nth-child(4){
+  background-color:#b2c3d3;
+  color:#002e43;
+}
+article > div:nth-child(5){
+  background-color:#d7dce0;
+  color:#002e43;
+}
+```
+
+ 
