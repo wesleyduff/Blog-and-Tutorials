@@ -38,7 +38,7 @@ Here are the available options:
 <br />
 <hr />
 
-'''css
+```css
 article {
   border:3px dashed #ccc;
   display:flex;
@@ -74,8 +74,6 @@ article > div:nth-child(5){
   color:#002e43;
 }
 ```
-
- 
 
 <hr />
 <br />
