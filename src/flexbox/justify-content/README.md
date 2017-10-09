@@ -100,7 +100,9 @@ article > div:nth-child(5){
 <br />
 <hr />
 
-'''css
+
+
+```css
 article {
   border:3px dashed #ccc;
   display:flex;
