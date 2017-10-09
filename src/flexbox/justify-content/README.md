@@ -6,7 +6,7 @@ If your flex-direction is set to *column*, you can adjust your flex items on the
 <br/>
 Here are the available options: 
 
-- flex-start
+- flex-start (default)
 - flex-end
 - Center
 - space-around
