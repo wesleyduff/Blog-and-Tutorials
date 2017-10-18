@@ -23,3 +23,4 @@ __What is a network__
 - Most basic, two computers linked together. Cables, Wireless(wifi) and bluetooth are a few
 - Linking computers by cables can become a mess.
 - - Lets say we have 10 coputers and each computer needs to have access to eachother. Each computer will need to have 9 cables attached to it for the other 9 computers on the network. This can become very messy as the illustration below shows.
+<img height="300" src="./assets/network_cables_10.png" alt="network of 10 computers" />
