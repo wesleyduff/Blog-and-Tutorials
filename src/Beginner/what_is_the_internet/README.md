@@ -76,7 +76,7 @@ __What is an ISP__
 - The message from our network, transpiled by our modem, is sent to our ISP. The ISP takes our message and delivers it to another ISP and that ISP then sends the request to the intended computer.
 - The internet consists of many networks that in themselves are private, public networks like ours and ISP networks.
 
-<img height="300" src="./assets/network_ISP.png" alt="Networks and ISP networks" />
+<img width="100" src="./assets/network_ISP.png" alt="Networks and ISP networks" />
 
 
 
