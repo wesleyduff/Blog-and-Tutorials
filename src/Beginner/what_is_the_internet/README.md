@@ -78,6 +78,28 @@ __What is an ISP__
 
 <img width="200" src="./assets/network_ISP.png" alt="Networks and ISP networks" />
 
+## Making Calls from a Computer on Our Nextwork to Antoher Computer Soemwhere in the World
+We are connected to the internet through the telephone sytem. How do we call a network or a special computer on a network in a different state or country?
+- Each computer has an identity, like a US Citizin has a social security number, a computer has something called an IP address (_internet protocol)
 
+__What is an IP Address__
+- An IP address is four numbers separated by a dot.
+_192.256.6.12_ 
+
+- IP addresses are great for computers, they can call an IP address and access any computer on the network by name. However, this is not such a great way for humans to interact with computers on a network.
+  - Remembering 192.256.6.12 is my wife's computer and 192.256.7.12 is mine, that is not something we can keep strait for very long. So what can we do? This is where *DNS* (_domain name service_) comes into play
+  
+__What is DNS__
+- We can assign a DNS to an IP address to give them a human readable name by using a Domain Name like google.com
+- Each DNS attached to an IP has to be unique and no one else can use the same credientials used for that DNS.
+- A Domain name (_google.com_) can be purchased from a domain name provider to be registered and used on your DNS. There can only be ONE domain name used at any given time. No one else can assign google.com to their DNS because google currently ownes it. 
+
+- Now we can call a computer on a network by their Domain Name that is attached to their DNS which maps to the networks IP address. _following?_
+- Instead of calling 192.256.6.12 in our browser to access this network on the web, we can access the same network by calling _google.com_
+
+## Internet and the Web, What is the Difference
+We were talking about the internet, now you mention the web and accessing domain names. What is the difference between the web and the internet? Is there a difference?
+- _Yes_, The internet is a large infastructure where many networks are connected together. Where as the web is a "service" built ontop of that infastructure.
+- It is also worth noting that there are other services built on top of the internet infrastructure as well. These include IRC and Email.
 
   
