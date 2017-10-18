@@ -47,11 +47,25 @@ __What if we had many networks that want to talk to eachother?__
   
 <img height="300" src="./assets/network_1.png" alt="Computers connected as a network to our router and routers connected with other computers" />
 
-_The idea of the internet should be coming into focus now :)_
-
 - By connecting computers to routers, then routers to ther routers, our network can then become infinite.
 
 <img height="300" src="./assets/network_2.png" alt="Computers connected as a network to our router and a central router connecting other router and networks" />
+
+_The idea of the internet should be coming into focus now :)_
+
+## Step 2: The Internet (network) on a Global Level
+Wait a minute! This is great, but this structure is built for our own purposes and not for a gloabl network.
+_Yes, you are right. Here is how our networks gains access to the world._
+- Other businesses, governemnt networks, private networks all of these networks need to speak to eachother.
+- We cannot add cables to each network around the world, so how can this be done?
+  - We allready have cables coming into our homes and businesses. These cables include, power, telephone and others. 
+  - Everyone has a phone line, so that is/was the best way to connect all computer networks together. (now we are based off of optical cables, but we will keep with the telephone example)
+  - In order for our network to be added to the global network that is the internet, our network must be able to communicate over the telephone network. This is where the "modem" comes into the picture.
+
+__What is a modem__
+- A modem convers our signal from our network into a message taht can be delivered over the telephone infrastructure and vice versa
+
+<img height="300" src="./assets/network_modem_tele.png" alt="Computers connected as a network to our router and a central router connecting other router and networks" />
 
 
 
