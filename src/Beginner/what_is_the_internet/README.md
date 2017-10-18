@@ -63,9 +63,20 @@ _Yes, you are right. Here is how our networks gains access to the world._
   - In order for our network to be added to the global network that is the internet, our network must be able to communicate over the telephone network. This is where the "modem" comes into the picture.
 
 __What is a modem__
-- A modem convers our signal from our network into a message taht can be delivered over the telephone infrastructure and vice versa
+- A modem converts our signal from our network into a message that can be delivered over the telephone infrastructure and vice versa
 
 <img height="300" src="./assets/network_modem_tele.png" alt="Computers connected as a network to our router and a central router connecting other router and networks" />
+
+__We are connected to the internet! But, how does our network talk to other networks on a global level?__
+- In order to send our network signal through the telephone service, we need to connect our network to an ISP (_internet service provider_)
+
+__What is an ISP__
+- an ISP is a company that manages many routers that connect to other ISPs. This is the compnay you pay for your 100mb per second speeds.
+
+- The message from our network, transpiled by our modem, is sent to our ISP. The ISP takes our message and delivers it to another ISP and that ISP then sends the request to the intended computer.
+- The internet consists of many networks that in themselves are private, public networks like ours and ISP networks.
+
+<img height="300" src="./assets/network_ISP.png.png" alt="Networks and ISP networks" />
 
 
 
