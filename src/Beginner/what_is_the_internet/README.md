@@ -7,7 +7,7 @@ You will learn
 - modem
 - ISP
 - IP address
-- DNS names
+- DNS
 - Domain Names
 - Difference between the Internet and the Web
 
