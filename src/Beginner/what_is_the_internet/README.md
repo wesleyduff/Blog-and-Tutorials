@@ -102,4 +102,7 @@ We were talking about the internet, now you mention the web and accessing domain
 - _Yes_, The internet is a large infastructure where many networks are connected together. Where as the web is a "service" built ontop of that infastructure.
 - It is also worth noting that there are other services built on top of the internet infrastructure as well. These include IRC and Email.
 
-  
+
+# Take the Quiz
+
+[How the Internet Works : Quiz](https://www.onlinequizcreator.com/how-the-internet-works/quiz-320313)
