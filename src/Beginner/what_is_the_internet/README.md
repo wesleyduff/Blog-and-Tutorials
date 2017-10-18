@@ -14,9 +14,9 @@ You will learn
 ## Creation of the internet
 - The internet is a large network of computers which communicate together.
 - Began in the 1960s as a Us-army funded project. The amount of data collected by the government needed a secure infrastructure in order to handle the load.
-- 1980's private companies, public universities and the government added to growth of the internet
+- 1980's private companies, public universities and the government added to the growth of the internet
 - The internet was evolved to allow large volumns of data to be shared by many compaines and the government.
-- The basic idea of the internet hasn't changed, even through the technology has. The basic concept of the internet is to connect many computers together and have them stay connected no matter what.
+- The basic idea of the internet hasn't changed, even through the technology has changed. The basic concept of the internet is to connect many computers together and have them stay connected, no matter what.
 
 ## Step one : The internet is a network
 __What is a network__
