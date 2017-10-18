@@ -4,11 +4,11 @@ You will learn
 - How the internet evolved to what it is today
 - network
 - router
-- wifi
 - modem
 - ISP
 - IP address
 - DNS names
+- Domain Names
 - Difference between the Internet and the Web
 
 ## Creation of the internet
