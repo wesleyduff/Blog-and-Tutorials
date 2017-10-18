@@ -23,12 +23,16 @@ __What is a network__
 - Most basic, two computers linked together. Cables, Wireless(wifi) and bluetooth are a few
 - Linking computers by cables can become a mess.
   - Lets say we have 10 coputers and each computer needs to have access to eachother. Each computer will need to have 9 cables attached to it for the other 9 computers on the network. This can become very messy as the illustration below shows.
+
 <img height="300" src="./assets/network_cables_10.png" alt="network of 10 computers" />
+
 - To simplify this we use a router
+
 __What is a router__
 - A router is a tinny computer
 - You can think of a router like a traffic cop, the cop directs traffic to where it needs to go. A router directs requests to the correct connected computer.
 - Each computer on our system gets connected to our router
   - this now brings the amount of cables needed from 45 down to 10.
+
 <img height="300" src="./assets/router.png" alt="Computers connected as a network to our router" />
   
