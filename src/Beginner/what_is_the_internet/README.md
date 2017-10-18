@@ -35,4 +35,24 @@ __What is a router__
   - this now brings the amount of cables needed from 45 down to 10.
 
 <img height="300" src="./assets/router.png" alt="Computers connected as a network to our router" />
+
+- For example: Computer A makes a request to computer B. Computer A sends the request for information for computer B to the router. The router then forwards the request to computer B. Computer B then responds with the request back to the router. The router then sends the response from computer B to comptuer A.
+
+__What if we had many networks that want to talk to eachother?__
+- Remember, routers are computers too
+- Lets say Network 1 has 5 computers and Network 2 has 5 comptuers. 
+  - Each one of the computers are attached to a router on their network. 
+  - We can connect routers together just like we connected computers to the router. 
+  - Now Network 1 and Network 2 are connected and each one of those computers can access any of the computers on the network.
+  
+<img height="300" src="./assets/network_1.png" alt="Computers connected as a network to our router and routers connected with other computers" />
+
+_The idea of the internet should be coming into focus now :)_
+
+- By connecting computers to routers, then routers to ther routers, our network can then become infinite.
+
+<img height="300" src="./assets/network_2.png" alt="Computers connected as a network to our router and a central router connecting other router and networks" />
+
+
+
   
