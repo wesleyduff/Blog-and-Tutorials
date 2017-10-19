@@ -47,4 +47,10 @@ Everything happens through the internet. This allows you to send and receive dat
 ### HTTP : Hyper Text Transfer Protocol
 - defines the language in which clients and servers talk to eachother
 
+### Component Files
+- Files that make up a website
+  - Primary files : HTML, CSS and JavaScript
+  - Assets : Images, Videos, Audio Files and PDFs are a few. 
 
+### So what does all this mean Willis?
+Here is an illustration of what exactly happens.
