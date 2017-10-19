@@ -54,3 +54,5 @@ Everything happens through the internet. This allows you to send and receive dat
 
 ### So what does all this mean Willis?
 Here is an illustration of what exactly happens.
+
+<img alt="illustration of how a browser renders a webpage" src="./assets/browser_renders.png" />
