@@ -30,3 +30,21 @@ Everything happens through the internet. This allows you to send and receive dat
   - manages how messages are broken down into smaller packages, then transmitted, then put back together on the other side.
 - IP (Internet Protocol)
   - Route the packackets created by the TCP to the correct location.
+- Who created TCP/IP?
+  - The Defense Advanced Research Projects Agency (DARPA) : the research branch of the U.S. Department of Defense
+  - When? 1970
+  - Why? Created the model for ARPANET : A wide area network the preceded the internet. 
+  - Originally designed for the Unix system
+  - Now? The model is now maintained by the Internet Engineering Task Force.
+  
+### DNS : Domain Name Service
+- Like an address book for websites
+- Type in a website in your browser and these things happen
+  - The browsser looks at the DNS
+  - The real address is found
+  - The request is then sent to the correct location and the website is returned.
+ 
+### HTTP : Hyper Text Transfer Protocol
+- defines the language in which clients and servers talk to eachother
+
+
