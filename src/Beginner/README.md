@@ -3,6 +3,7 @@ __and a little refresher for the others__
 
 ## What is included in this folder
 - What is the internet
+- How does the web work
 - Difference between webpage, website and search engine. 
 
 __references__
