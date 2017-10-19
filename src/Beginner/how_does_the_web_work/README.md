@@ -43,6 +43,7 @@ Everything happens through the internet. This allows you to send and receive dat
   - The browsser looks at the DNS
   - The real address is found
   - The request is then sent to the correct location and the website is returned.
+- Special servers that match up to an IP address (a specif location on a network)
  
 ### HTTP : Hyper Text Transfer Protocol
 - defines the language in which clients and servers talk to eachother
