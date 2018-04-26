@@ -1,5 +1,14 @@
 const AccountBuilder = require('./AccountBuilder');
 
+/**
+ * BEFORE : 
+ * 
+ * const BillTheManager = new Account('Bill', true, true, true, true, 15)
+ * 
+ * What is true, true, true, true, 15? 
+ * This is called Telescoping Constructor Promblem
+ */
+
 //Accounts
 const BillTheManager = new AccountBuilder('Bill')
   .makeEmployee()
