@@ -1,3 +1,4 @@
+
 # Builder Patter - from Gang of Four : GoF
 **intent**: "Separate the construction of a complex object from its preresentation so that the same 
 construction process can create different representations."
