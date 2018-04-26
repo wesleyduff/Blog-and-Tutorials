@@ -1,3 +1,4 @@
+![Builder Pattern](https://github.com/wesleyduff/Blog-and-Tutorials/blob/master/src/nodeJS/design_patterns/builder/Builder-measuring.jpg)
 
 # Builder Patter - from Gang of Four : GoF
 **intent**: "Separate the construction of a complex object from its preresentation so that the same 
