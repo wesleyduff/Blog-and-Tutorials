@@ -4,7 +4,8 @@
 **intent**: "Separate the construction of a complex object from its preresentation so that the same 
 construction process can create different representations."
 
-## Telescoping Constructor Promblem
+## Why use the Builder Pattern?
+Telescoping Constructor Promblem
 **example**: 
 
 const BillTheManager = new Account('Bill', true, true, true, true, 15)
