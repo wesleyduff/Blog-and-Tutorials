@@ -32,7 +32,7 @@ const CharlyTheCallCenterAgent_level_III = new AccountBuilder('Charlly')
   .giveAccessLevel(3)
   .build();
 
-const FrankTheCustomer = new AccountBuilder('Frank')
+const FrankTheCustomer_active = new AccountBuilder('Frank')
   .saveDoctors(['PWID1', 'PWID2'])
   .makeActive()
   .build();
