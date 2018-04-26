@@ -1,0 +1,29 @@
+{
+
+  "Builder Pattern" : {
+    "prefix": "jBuilder",
+    "body": [
+        "const ${1:BuilderName}Builder = require('./${1:BuilderName});",
+        " ",
+        "class ${1:BuilderName}Builder {",
+        " ",
+        " constructor(${2:constructor_param}){",
+        "   this.${2:constructor_param} = ${2:constructor_param};",
+        " }",
+        " ",
+        " ${3:first_method}() {",
+        "   ${4};",
+        "   return this;",
+        " }",
+        " ",
+        "  build(){",
+        "    return new Account(this);",
+        "  }",
+        "}",
+        " ",
+        "module.exports = AccountBuilder;"
+    ],
+    "description": "Basic builder to use as a builder pattern for a JavasScript class"
+  }
+
+}
