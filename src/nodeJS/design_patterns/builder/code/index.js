@@ -42,7 +42,7 @@ const SaraTheCustomer_inactive = new AccountBuilder('Sara')
   
   console.log('SaraTheCustomer_inactive \n', SaraTheCustomer_inactive.toString());
   console.log('  ')
-  console.log('FrankTheCustomer \n', FrankTheCustomer.toString());
+  console.log('FrankTheCustomer \n', FrankTheCustomer_active.toString());
   console.log('  ')
   console.log('CharlyTheCallCenterAgent_level_III \n', CharlyTheCallCenterAgent_level_III.toString());
   console.log('  ')
