@@ -3,7 +3,7 @@
   "Builder Pattern" : {
     "prefix": "jBuilder",
     "body": [
-        "const ${1:BuilderName}Builder = require('./${1:BuilderName});",
+        "const ${1:BuilderName} = require('./${1:BuilderName}');",
         " ",
         "class ${1:BuilderName}Builder {",
         " ",
