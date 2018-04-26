@@ -12,3 +12,7 @@ const BillTheManager = new Account('Bill', true, true, true, true, 15)
 var bill = new PersonBuilder('bill').makeEmployee().makeManager().makePartTime().giveMoney(200)
 
 Review the code folder to see how you can implement a builder.
+
+#### How to run the example 
+- cd into the code folder
+- in the terminal run : node index.js
