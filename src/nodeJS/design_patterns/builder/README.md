@@ -5,8 +5,8 @@ construction process can create different representations."
 ## Telescoping Constructor Promblem
 **example**: 
 
-var bill = new Person('bill', true, true, false, 200);
-- ? What does true, true, false, 200, true mean?
+const BillTheManager = new Account('Bill', true, true, true, true, 15)
+- ? What does true, true, true, true, 15 mean?
 
 ### Builder example
 var bill = new PersonBuilder('bill').makeEmployee().makeManager().makePartTime().giveMoney(200)
