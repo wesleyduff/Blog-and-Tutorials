@@ -19,3 +19,6 @@ Review the code folder to see how you can implement a builder.
 #### How to run the example 
 - cd into the code folder
 - in the terminal run : node index.js
+
+
+*slides* : https://docs.google.com/presentation/d/1dL0ZZlqgBVJ_CmiuFuu2YJdTZYK3QFqgA8hxroNqXG8/edit#slide=id.g39354a21e0_0_137
