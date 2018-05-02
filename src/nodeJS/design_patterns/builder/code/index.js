@@ -1,5 +1,5 @@
 const AccountBuilder = require('./AccountBuilder');
-
+const DirectorManager = require('./DirectorManager');
 /**
  * BEFORE : 
  * 
@@ -17,6 +17,11 @@ const BillTheManager = new AccountBuilder('Bill')
   .makeAdmin()
   .giveAccessLevel(5)
   .build();
+
+/**
+ * Less control for user but more strict for patterns
+ */
+const BillTheManger_part2 = new DirectorManager('Bill').construct();
 
 const MarkTheCallCenterAgent_level_II = new AccountBuilder('Mark')
   .makeEmployee()
@@ -49,4 +54,6 @@ const SaraTheCustomer_inactive = new AccountBuilder('Sara')
   console.log('MarkTheCallCenterAgent_level_II \n', MarkTheCallCenterAgent_level_II.toString());
   console.log('  ')
   console.log('BillTheManager \n', BillTheManager.toString());
+  console.log('  ')
+  console.log('BillTheManager FROM Director \n', BillTheManger_part2.toString());
   console.log('  ')
