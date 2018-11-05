@@ -5,7 +5,7 @@ const databaseModule = () => {
 
     return {
         getPrivate: () => {
-            return `Private variable any method can use, and it is NAMESPACED : \n private variable = ${private_variable}`;
+            return `Privat e variable any method can use, and it is NAMESPACED : \n private variable = ${private_variable}`;
         },
         getUsers: () => {
             const users = ['john', 'mike', 'harry'];
