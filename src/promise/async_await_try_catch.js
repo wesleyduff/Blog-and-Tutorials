@@ -22,7 +22,7 @@ const calendarEvents = (() => {
                     } else {
                         resolve({
                             code:200,
-                            data: result
+                            result: result
                         })
                     }
                 });
@@ -31,7 +31,7 @@ const calendarEvents = (() => {
     }
 })();
 
-const hanlders = (() => {
+const handlers = (() => {
 
     const hasCode = (objectToCheck) => {
         return objectToCheck && objectToCheck.code;
@@ -46,7 +46,7 @@ const hanlders = (() => {
             if(hasCode(resultFromPromise) && has200(resultFromPromise)){
                 return {
                     code: 200,
-                    data: resultFromPromise.data
+                    result: resultFromPromise.data
                 }
             } else if(hasCode(resultFromPromise) && !has200(resultFromPromise)){
                 return {
