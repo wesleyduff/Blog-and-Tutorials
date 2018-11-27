@@ -11,4 +11,4 @@ Many theories are out there on best practices. From my many years of experience 
 - The callee of the promise should be wrapped with a try catch if async await is being used.
 - The callee of the promise should use *then* and *catch*, if not using async await
 
-You can see an example of *try catch* and *async await* by reviewing the file **promise_all_error_thrown_catch_method.js**
+You can see an example of *try catch* and *async await* by reviewing the file **async_await_try_catch.js**
