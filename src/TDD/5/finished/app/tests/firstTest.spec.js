@@ -4,9 +4,13 @@ const   chai    = require('chai'),
         sinon   = require('sinon');
 
 describe('TDD Tutorial - session 2 --> ', () => {
-
+    let sandbox;
     before(() => {
-        var sandbox = sinon.createSandbox();
+       sandbox = sinon.createSandbox();
+    })
+
+    after(() => {
+        sandbox.restore();
     })
 
     it('Should load our date module', () => {

@@ -42,4 +42,20 @@ before(() => {
   var sandbox = sinon.createSandbox();
 })
 ```
-Dont forget to require your sinon module at the top `const sinon   = require('sinon');`
+Don't forget to require your sinon module at the top `const sinon   = require('sinon');`  
+
+We also need to reset our sandbox. We can perform this with the *after* method.
+
+```
+let sandbox;
+
+before(() => {
+   sandbox = sinon.createSandbox();
+})
+
+after(() => {
+    sandbox.restore();
+})
+```
+We moved the varibale *sandbox* outside of the before method so after can access the scope of the variable as well.  
+Calling restore method on the sandbox *restores* all actions performed on the sandbox. This is like cleaning up after ourselves. If we do not, another test suite in another file could still be accessing our spies, stubs etc.. and cause errors. With errors like these, it is hard to debug.
