@@ -16,10 +16,14 @@ describe('TDD Tutorial - session 2 --> ', () => {
 
     it('Should have a method to return a date as a string that matches format MM-DD-YYY', () => {
         try{
-            const dateModule = require('../modules/dates');
-            const returnedValue = dateModule.getFormattedDate(new Date());
+            const   dateModule      = require('../modules/dates'),
+                    returnedValue   = dateModule.getFormattedDate(new Date()),
+                    regExMatcher    = /([0-9]{2})+-+([0-9]{2})+-+([0-9]{4})/g
+
+            const actual = returnedValue.match(regExMatcher);
 
             expect(returnedValue).to.be.a('string');
+            expect(actual.length).to.equal(1);
         } catch(exception){
             assert.fail(exception)
         }

@@ -75,8 +75,34 @@ Lets update our **getFormattedDate** now.
 
 ```
 getFormattedDate: (date) => {
-   return `${date.getMonth()}-${date.getDay()}-${date.getFullYear()}`
+   return `${date.getMonth()}-${date.getDate()}-${date.getFullYear()}`
 }
 ```
 
 Our method now returns a string and our test should pass.
+
+### Rethink Your Test Cases
+Did you cover what really needs to be covered? The code coverage tool says you are good, but are you really. 
+
+Our test covering *getFormattedDate* checks to make sure the method exits and it returns a string. What if someone changes this method to return a string of a formated date that is not what we want. We need to make sure our returned string matches our expected output. 
+
+Lets add another expect to our test case to finish off our second test.  
+**note:** You can add multiple expects and asserts to your test method. The first one that fails stops the interpretation of your testcase and does not test the asserts and expects below.
+```
+    it('Should have a method to return a date as a string that matches format MM-DD-YYY', () => {
+        try{
+            const   dateModule      = require('../modules/dates'),
+                    returnedValue   = dateModule.getFormattedDate(new Date()),
+                    regExMatcher    = /([0-9]{2})+-+([0-9]{2})+-+([0-9]{4})/g
+
+            const actual = returnedValue.match(regExMatcher);
+
+            expect(returnedValue).to.be.a('string');
+            expect(actual.length).to.equal(1);
+        } catch(exception){
+            assert.fail(exception)
+        }
+    })
+```
+
+There are a few more tests we can write to fully cover this method. The next module to this TDD study will go over Sinon and specificaly Spies.
