@@ -1,12 +1,17 @@
-const   chai    = require('chai'),
-        expect  = chai.expect,
-        assert  = chai.assert,
-        sinon   = require('sinon');
+const   chai        = require('chai'),
+        expect      = chai.expect,
+        assert      = chai.assert,
+        sinon       = require('sinon'),
+        dateModule  = require('../modules/dates');
+
 
 describe('TDD Tutorial - session 2 --> ', () => {
-    let sandbox;
+    let sandbox,
+        getFormattedDateSpy;
     before(() => {
        sandbox = sinon.createSandbox();
+
+       getFormattedDateSpy = sandbox.spy(dateModule, 'getFormattedDate');
     })
 
     after(() => {
@@ -38,8 +43,12 @@ describe('TDD Tutorial - session 2 --> ', () => {
         }
     })
 
-    it('Should throw an exception if the paramter given is not of type Date', () => {
+    it('Should throw an exception if the parameter given is not of type Date', () => {
+        //setup
+        const date = new Date();
+        dateModule.getFormattedDate(date);
 
+        assert(getFormattedDateSpy.calledWithExactly(date), 'Should have been called with only one parameter of date')
     })
 
 })

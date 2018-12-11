@@ -58,4 +58,46 @@ after(() => {
 })
 ```
 We moved the varibale *sandbox* outside of the before method so after can access the scope of the variable as well.  
-Calling restore method on the sandbox *restores* all actions performed on the sandbox. This is like cleaning up after ourselves. If we do not, another test suite in another file could still be accessing our spies, stubs etc.. and cause errors. With errors like these, it is hard to debug.
+Calling restore method on the sandbox *restores* all actions performed on the sandbox. This is like cleaning up after ourselves. If we do not, another test suite in another file could still be accessing our spies, stubs etc.. and cause errors. With errors like these, it is hard to debug.  
+
+## Create our first SPY
+Lets add a spy on our *getFormattedDate* method
+```
+let sandbox,
+    getFormattedDateSpy;
+before(() => {
+   sandbox = sinon.createSandbox();
+
+   getFormattedDateSpy = sandbox.spy(dateModule, 'getFormattedDate');
+})
+```
+Couple of things to note here. Required our date module at the top of the file and used the variable everywhere we are requesting the date module.  
+Added the *getFormattedDateSpy* variable under our sandbox variable.  
+Now we have access to our spy in all of the tests under our test suite.
+ 
+Now, lets put our spy into use. 
+```
+it('Should throw an exception if the parameter given is not of type Date', () => {
+    const date = new Date();
+    dateModule.getFormattedDate(date);
+
+    assert(getFormattedDateSpy.calledWithExactly(date), 'Should have been called with only one parameter of date')
+})
+```
+Here we are asserting and not expecting. The first parameter sent to an assert method should come out true, if it does not, the error message will be the second paramter you provide.  
+Try adding a second parameter and see what happens. 
+
+Tests should all pass now.
+
+### What we have learned
+Sinon
+- spy
+- sandbox
+
+Mocha 
+- before
+- after
+
+Chai
+- assert
+- expect
