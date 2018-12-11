@@ -1,8 +1,13 @@
-const   chai = require('chai'),
-        expect = chai.expect,
-        assert = chai.assert;
+const   chai    = require('chai'),
+        expect  = chai.expect,
+        assert  = chai.assert,
+        sinon   = require('sinon');
 
 describe('TDD Tutorial - session 2 --> ', () => {
+
+    before(() => {
+        var sandbox = sinon.createSandbox();
+    })
 
     it('Should load our date module', () => {
         try{
@@ -27,6 +32,10 @@ describe('TDD Tutorial - session 2 --> ', () => {
         } catch(exception){
             assert.fail(exception)
         }
+    })
+
+    it('Should throw an exception if the paramter given is not of type Date', () => {
+
     })
 
 })
