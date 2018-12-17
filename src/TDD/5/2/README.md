@@ -125,8 +125,9 @@ const swapi = (() => {
                 request(url, (error, response, body) => {
                     if(error){
                         reject(`Error calling api : ${error}`);
+                    } else {
+                        resolve({result: body})
                     }
-                    resolve({result: body})
                 })
             })
         }
@@ -326,6 +327,63 @@ Our test still passes.
 
 We no longer require SWAPI to be assessable to run our tests.
 
+## How to test our failing cases.
+We are hijacking our third party call and returning a success 200 http response. Now we need to test what happens when we recieve an error.  
+A good developer will make sure our code fails gracefully and causes the least amount of friction to the end user.
+
+Lets add a new test to our second test suite to test our unsuccessful api call.
+
+```
+it('Should handle an unsuccessful api response with a logged out message to the user using console.error', async () => {
+    const query = {
+        platform: 'planets',
+        id: 2
+    }
+
+    let url = swapiModule.buildUrl(query);
+    parsedUrl = urlParse(url);
+
+    const host = `${parsedUrl.protocol}//${parsedUrl.hostname}`
+    const getSegment = parsedUrl.pathname + parsedUrl.query;
+
+    nock(host)
+        .get(getSegment)
+        .replyWithError({'message': 'fake error message', 'code': 'CUSTOM_ERROR'})
+
+    try{
+        await swapiModule.get(url);
+    } catch(exception){
+        assert(loggerErrorSpy.calledOnce, 'Failed because the logger was not called with an error');
+    }
+})
+```
+We see a lot of the same stuff here. A few items to note
+- New spy called *loggerErrorSpy*. Create a new spy just like we did in the *Before* method inside our testsuite. Here we want to spy on the **error** method on the console object.
+- Update our *nock* to replyWithError instead of reply with a 200 http response.
+
+Run your test and you will see it fail with  
+`AssertionError: Failed because the logger was not called with an error`  
+
+To make our test pass, we need to log to the console with the error method.  
+Lets add the code to our module now. 
+
+```
+ get: (url) => {
+    console.log(url);
+    return new Promise((resolve, reject) => {
+        request(url, (error, response, body) => {
+            if(error){
+                console.error(`Error calling api : ${JSON.stringify(error)}`);
+                reject(`Error calling api : ${JSON.stringify(error)}`);
+            } else {
+                resolve({result: body})
+            }
+        })
+    })
+}
+```
+Here we added the console.error to our error block.  
+Run your test again and they should all be passing.
 
 ### What we have learned
 Sinon
@@ -339,3 +397,13 @@ Mocha
 Chai
 - assert
 - expect
+
+Nock
+- reply
+- replyWithEror
+
+You should now be able to 
+- return data when a thrid party api is called
+- setup nested test suites in one test file
+- assert and expect passing and failing cases
+- make sure specific methods are called by spying on the object's methods

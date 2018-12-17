@@ -60,6 +60,7 @@ describe('TDD Tutorial --> ', () => {
     describe('Swapi module --> ', () => {
         let sandbox,
             loggerSpy,
+            loggerErrorSpy,
             swapiStub;
 
         before(() => {
@@ -68,6 +69,7 @@ describe('TDD Tutorial --> ', () => {
 
             //spies
             loggerSpy = sandbox.spy(console, 'log');
+            loggerErrorSpy = sandbox.spy(console, 'error');
 
         })
 
@@ -97,10 +99,33 @@ describe('TDD Tutorial --> ', () => {
             try{
                 await swapiModule.get(url);
             } catch(exception){
-                assert.fail(`Exception : ${exception}`);
+                assert.fail(`Exception : ${JSON.stringify(exception)}`);
             }
 
             assert(loggerSpy.calledOnce, 'Failed because the logger functionality was not called');
         });
+
+        it('Should handle an unsuccessful api response with a logged out message to the user using console.error', async () => {
+            const query = {
+                platform: 'planets',
+                id: 2
+            }
+
+            let url = swapiModule.buildUrl(query);
+            parsedUrl = urlParse(url);
+
+            const host = `${parsedUrl.protocol}//${parsedUrl.hostname}`
+            const getSegment = parsedUrl.pathname + parsedUrl.query;
+
+            nock(host)
+                .get(getSegment)
+                .replyWithError({'message': 'fake error message', 'code': 'CUSTOM_ERROR'})
+
+            try{
+                await swapiModule.get(url);
+            } catch(exception){
+                assert(loggerErrorSpy.calledOnce, 'Failed because the logger was not called with an error');
+            }
+        })
     })
 })

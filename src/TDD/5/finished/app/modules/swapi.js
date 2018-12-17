@@ -25,9 +25,11 @@ const swapi = (() => {
             return new Promise((resolve, reject) => {
                 request(url, (error, response, body) => {
                     if(error){
-                        reject(`Error calling api : ${error}`);
+                        console.error(`Error calling api : ${JSON.stringify(error)}`);
+                        reject(`Error calling api : ${JSON.stringify(error)}`);
+                    } else {
+                        resolve({result: body})
                     }
-                    resolve({result: body})
                 })
             })
         }
