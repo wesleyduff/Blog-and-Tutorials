@@ -407,3 +407,9 @@ You should now be able to
 - setup nested test suites in one test file
 - assert and expect passing and failing cases
 - make sure specific methods are called by spying on the object's methods
+
+
+**notice** You may have seen  
+` process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0; `  
+This was put in place if you were seeing a "self signed cert" error.  
+This piece of code has to come **before** any requests are made to an external https request.
