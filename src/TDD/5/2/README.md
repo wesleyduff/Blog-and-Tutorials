@@ -89,6 +89,61 @@ Try adding a second parameter and see what happens.
 
 Tests should all pass now.
 
+## Sinon Spy - Check that method has been called
+Sometimes we need to make sure a method has been called. Say, we are required as a team to log all outgoing api calls. To make sure we abide by the team rules, we need to make sure our log method has been called at least once.  
+Sinon spies provide a way to test this.  
+Lets add some code to our application. 
+- add a new module to modules called swapi.js
+- add the code below to our file : **note** we are not following out TDD practice here, just so we can skip over what we have already learned and move onto the next bit.
+This code calls a free third party api called SWAPI, Star Wars API.   
+One method builds the URL based on our parameters, the other makes the reqeust to the API.
+```
+const request = require('request');
+
+const swapi = (() => {
+
+    return {
+        buildUrl: (query) => {
+            if(!query || !query.platform || !query.quantity){
+                throw new Error('Arguments do not match expected values.')
+            }
+            let url = 'https://swapi.co/api/'
+            switch(query.platform){
+                case 'planets':
+                    url = `${url}planets/${query.quantity}`;
+                    break;
+                case 'people':
+                    url = `${url}people/${query.quantity}`;
+                    break;
+                default:
+                    throw new Error('query.platform was not a property on query object.')
+            }
+            console.log(`URL called : -> ${url}`);
+            return url;
+        },
+        get: (url) => {
+            return new Promise((resolve, reject) => {
+                request(url, (error, response, body) => {
+                    if(error){
+                        reject(`Error calling api : ${error}`);
+                    }
+                    resolve({result: body})
+                })
+            })
+        }
+    }
+
+})();
+
+module.exports = swapi;
+```
+We need to make sure our logger is called at least once with the URL that is being called. For this example we are just using the built in *console.log*  
+
+Lets write our test to make sure this happens. 
+
+```
+
+```
 ### What we have learned
 Sinon
 - spy

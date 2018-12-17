@@ -3,7 +3,8 @@
   "name": "pluralsight-modern-async-js",
   "dependencies": {
     "expect": "^1.20.1",
-    "live-server": "^1.0.0"
+    "live-server": "^1.0.0",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "chai-spies": "^1.0.0"
