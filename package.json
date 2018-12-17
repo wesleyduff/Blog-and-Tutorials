@@ -4,10 +4,12 @@
   "dependencies": {
     "expect": "^1.20.1",
     "live-server": "^1.0.0",
+    "nock": "^10.0.4",
     "request": "^2.88.0"
   },
   "devDependencies": {
-    "chai-spies": "^1.0.0"
+    "chai-spies": "^1.0.0",
+    "url-parse": "^1.4.4"
   },
   "scripts": {
     "test": "live-server"
