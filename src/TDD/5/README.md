@@ -25,4 +25,4 @@ const   sandbox = sinon.createSandbox(),
 
 We now have a spy on our `myObjFunction`.
 
-Proceed onto [fail](./refactor) to start working out TDD process.
+Proceed onto [refactor](./refactor) to start working out TDD process.
