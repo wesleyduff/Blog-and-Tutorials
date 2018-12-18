@@ -13,5 +13,16 @@ Best pracitce when creating spies is to add your spy to a sandbox. A sandbox is 
 
 Example: 
 ```
-const 
+const sinon = require('sinon');
+
+const myObj = {
+  myObjFunction : () => { console.log(' Real method ') }
+}
+
+const   sandbox = sinon.createSandbox(),
+        mySpy   = sandbox.spy(myObj, 'myObjFunction');
 ```
+
+We now have a spy on our `myObjFunction`.
+
+Proceed onto [fail](./fail) to start working out TDD process.
