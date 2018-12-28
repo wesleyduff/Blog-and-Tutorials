@@ -10,4 +10,4 @@ There are many options with spies. The one we are focusing in this module is **s
 assert(ourSpy.calledOnce, 'Our method should have been called exactly once');
 ```
 
-Continue onto the (refactor)[./refactor] article and lets put this to use.
+Continue onto the [refactor](./refactor) article and lets put this to use.
