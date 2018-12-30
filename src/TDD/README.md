@@ -1,4 +1,7 @@
+> #TDD - Created by *Kent Beck* in the early 1990's when he was employed by the Crystler Corporation.
+
 # Tutorial on How to get Started with TDD
+- TDD is also part of the Extream programming methodology. 
 
 ## Structure 
 Each level of the tutorial will be located in folders. 
