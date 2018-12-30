@@ -78,3 +78,19 @@ Below is a list of items that will help you get started.
   - Your test suite (describe) should be descriptive of what your test cases will perform. 
   - Separate your test cases into test suites
   - Each test case should be short and clear about what the test asserts.
+- Keep tests fast
+  - Adding console logs and other console methods in your test case slows down the test. If you have 1000 test cases, you can see how this will slow down your test suites.
+  - Fast testing is one of the major benifits of TDD. Test yoru code and fail fast. If it takes a while to run your test, you will run them less often and less frequently. 
+  - Use testing frameworks to handle slow collaborators with fast test doubles. (spies, mocks and stubs)
+  
+  
+## What next?
+### Code Coverage
+*What is code coverage*?  
+Code coverage shows you the amount of code covered. Some code coverage tools show you what lines have not been covered in a GUI tool. This comes in handy because it allows you to see what you have misseed.
+
+What you should look for in your code coverage report :
+- Percentage of lines covered from your whole application
+- Review each module folder and see what level of coverage is reported
+  - For example, say there is a login folder that contains our login modules. We can view the login folder and it will tell us the code coverage for the files within that folder. If we see the code coverage and it is lower than our team agreement, we know we need to increase the code coverage for those modules.
+- A good rule of thumb for code coverage numbers should be around 80%. But know, not all lines of code need to be covered. It is nice to have 100% of lines covered, but this is not very realistic nor practicle for a coprorate situation. We should make sure we cover everything that was discussed during the tech grooming phase of our story. The main idea for testing is: cover your failing cases first and make them fail gracefully, make your test pass, refactor your code to adhere to your teams best practices.
