@@ -68,4 +68,5 @@ Below is a list of items that will help you get started.
     - Forces you to write just enough code to get you to the next test case.
     - The next test case should be the next simplist test case.
   - You may not write more production code than is sufficient to pass the current failng unit test.
+  - Each itteration should only be a few minutes of work.
   > These rules help keep you in a small tight loop that help you write less code that passes all tests.
