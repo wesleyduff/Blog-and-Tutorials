@@ -47,3 +47,25 @@ When you have a full suite of tests, you can review these tests and see a full d
 
 TDD, you write your tests before you write any production code. This allows you to think about, failing api calls, wrong arguments passed in, and so much more. You are also forced to write code in a modular pattern and small consise functions that do one thing and one thing well.
 
+## What do we test.
+Anything that contains logic! Short and sweet.
+
+## How do we test
+Many good developers get stumped here. They are reviewing their story and are wondering how to get stared.  
+Below is a list of items that will help you get started.
+
+- Develop your code in a Red phase, Green phase and a refactor phase.
+  - Red : Write a failing test case
+  - Green : Write code to make your tests pass
+  - Refactor : Refactor your code to adhear to team standards 
+- Tech grooming session are a good way to get a good grasp of what test cases you should be writing. 
+  - Discuss with your team, come up with a good list of test cases that are **MUSTS**. Write these first. You should also review the acceptance critiera, make sure you have all your bases covered.
+  - Review your test cases, you do not want any bugs to come about, and you want to make sure your fellow developers use your methods correclty. 
+  - Share your test cases with the P.O. and your Q.A. team. You should all agree, that if these tests are written and pass, then you can say by definition of done, I have successfully completed this story.
+- *Uncle Bob* from the  book **[Clean Code](https://www.investigatii.md/uploads/resurse/Clean_Code.pdf)**
+  - You may not write any production code until yoiu have written a failing unit test
+  - You may not write any more code than is needed to fail your test.
+    - Forces you to write just enough code to get you to the next test case.
+    - The next test case should be the next simplist test case.
+  - You may not write more production code than is sufficient to pass the current failng unit test.
+  > These rules help keep you in a small tight loop that help you write less code that passes all tests.
