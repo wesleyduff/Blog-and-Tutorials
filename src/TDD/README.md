@@ -73,3 +73,8 @@ Below is a list of items that will help you get started.
 - Always write the next simplist testcase.
   - Writing the next simplist test case allows you to gradually increase the complexity of your code.
   - If you jump to a complex test case, you will find yourself writing a lot of production code all at once, which goes away from TDD.
+  - Writing complex test cases also lead to poor design decisions. You might miss the more simpler approaches.
+- Write descriptive test names
+  - Your test suite (describe) should be descriptive of what your test cases will perform. 
+  - Separate your test cases into test suites
+  - Each test case should be short and clear about what the test asserts.
