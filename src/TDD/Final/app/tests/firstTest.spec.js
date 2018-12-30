@@ -60,8 +60,7 @@ describe('TDD Tutorial --> ', () => {
     describe('Swapi module --> ', () => {
         let sandbox,
             loggerSpy,
-            loggerErrorSpy,
-            swapiStub;
+            loggerErrorSpy;
 
         before(() => {
             process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
@@ -128,4 +127,36 @@ describe('TDD Tutorial --> ', () => {
             }
         })
     })
-})
+
+    describe('Failing API call', () => {
+      let sandbox,
+          swapiStub;
+
+      before(() => {
+        sandbox = sinon.createSandbox();
+
+        //spies
+        swapiStub = sandbox.stub(swapiModule, 'get');
+      });
+
+      after(() => {
+        sandbox.restore();
+      })
+
+
+      it('Should handle a failure with a console.error when the api returns a failing response', () => {
+
+        swapiStub.rejects({message: 'Fake failure test'});
+
+          return swapiModule.get('http://this.does.not.matter.com')
+            .then(result => {
+              assert.fail('Should not execute, our test is to make sure your api failure is handled.');
+            })
+            .catch(exception => {
+              expect(exception.message).to.equal('Fake failure test')
+            });
+
+      });
+
+    });
+});

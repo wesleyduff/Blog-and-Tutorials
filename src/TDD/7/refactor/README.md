@@ -132,29 +132,6 @@ Lets add the code to our module now.
 Here we added the console.error to our error block.  
 Run your test again and they should all be passing.
 
-### What we have learned
-Sinon
-- spy
-- sandbox
-
-Mocha 
-- before
-- after
-
-Chai
-- assert
-- expect
-
-Nock
-- reply
-- replyWithEror
-
-You should now be able to 
-- return data when a thrid party api is called
-- setup nested test suites in one test file
-- assert and expect passing and failing cases
-- make sure specific methods are called by spying on the object's methods
-
 
 **notice** You may have seen  
 ` process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0; `  
