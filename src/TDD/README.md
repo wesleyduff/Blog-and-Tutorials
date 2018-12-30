@@ -70,3 +70,6 @@ Below is a list of items that will help you get started.
   - You may not write more production code than is sufficient to pass the current failng unit test.
   - Each itteration should only be a few minutes of work.
   > These rules help keep you in a small tight loop that help you write less code that passes all tests.
+- Always write the next simplist testcase.
+  - Writing the next simplist test case allows you to gradually increase the complexity of your code.
+  - If you jump to a complex test case, you will find yourself writing a lot of production code all at once, which goes away from TDD.
