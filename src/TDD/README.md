@@ -6,12 +6,13 @@
 ## Structure 
 Each level of the tutorial will be located in folders. 
 1. The setup
-2. Our first failing test
-3. Going from Red to Green
-4. Going from Green to Refactor to Green again
-5. Finding the next smallest test case and moving forward
-6. Implementing a code coverage tool
-7. Revewing code coverage and getting one hundred percent. 
+2. Our first failing test & passing test. Does module exist
+3. Going from Red to Green : Checking for method
+4. Using expect to fail and pass a test
+5. Setting up Sinon Spies and spying on arguments passed into a function call
+6. Sinon Spy : Checking if a method was called.
+7. How to handle third party API calls with Nock.
+9. Mocking out large collaborators for faster tests : Mocking out methods.
 
 ## Rules
 - No production code should be written till there is a failing unit test.
