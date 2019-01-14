@@ -25,8 +25,10 @@ This is good because we are still on the track of TDD. *Red* light *Green* light
 Lets update our **getFormattedDate** now.
 
 ```
-getFormattedDate: (date) => {
-   return `${date.getMonth()}-${date.getDate()}-${date.getFullYear()}`
+getFormattedDate: (rawDate) => {
+    const month = ("0" + (rawDate.getMonth() + 1)).slice(-2);
+    const date = ("0" + rawDate.getDate()).slice(-2);
+    return `${month}-${date}-${rawDate.getFullYear()}`
 }
 ```
 
