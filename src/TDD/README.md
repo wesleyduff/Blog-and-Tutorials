@@ -6,13 +6,15 @@
 ## Structure 
 Each level of the tutorial will be located in folders. 
 1. The setup
-2. Our first failing test & passing test. Does module exist
+2. Our first failing test & passing test : Does module exist
 3. Going from Red to Green : Checking for method
-4. Using expect to fail and pass a test
-5. Setting up Sinon Spies and spying on arguments passed into a function call
+4. Using Chai's expect to fail and pass a test
+5. Setting up Sinon Spies : Spying on arguments passed into a function call
 6. Sinon Spy : Checking if a method was called.
 7. How to handle third party API calls with Nock.
-9. Mocking out large collaborators for faster tests : Mocking out methods.
+9. Mocking out large collaborators : Mocking out methods.
+
+* Review some existing tests in your codebase.
 
 ## Rules
 - No production code should be written till there is a failing unit test.
@@ -24,9 +26,7 @@ Each level of the tutorial will be located in folders.
 Software bugs can hurt the business. 
 The goal of any developer, Senior or higher, should be to write world class software. 
 If this is not a goal of yours, then you are in the wrong business. 
-Your junior teammates and you manager are looking to you for the best code you 
-can possibly create. Not everyone is the same, but we should all 
-have the mindset to be responsible for the code we put out into the world.  
+A developer should be responsible for the code they put out into the world.  
 
 > *High Quality Code* - Where the developer takes responsibility for the quality of their code.
 
