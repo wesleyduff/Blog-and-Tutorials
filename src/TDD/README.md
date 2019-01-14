@@ -38,7 +38,7 @@ You will be surprised on how quickly you can find an issue with your code when y
 
 > *Confidence* - When your code goes out to production, you can be confident you code did not break, instead it strengthened the code base and user experience. 
 
-How many times do you find yourslf on a release, with the nagging thought that you code might not work. Better yet, get called out because your code broke on production. If your code is fully tested and you have the correct tests written, you will have the confidence in your code.
+How many times do you find yourself on a release, with the nagging thought that you code might not work. Better yet, get called out because your code broke on production. If your code is fully tested and you have the correct tests written, you will have the confidence in your code.
 
 > *Documentation* - Yes! Tests document your code. 
 
