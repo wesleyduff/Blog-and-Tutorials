@@ -1,4 +1,4 @@
-> #TDD - Created by *Kent Beck* in the early 1990's when he was employed by the Crystler Corporation.
+> # TDD - Created by *Kent Beck* in the early 1990's when he was employed by the Chrysler Corporation.
 
 # Tutorial on How to get Started with TDD
 - TDD is also part of the Extream programming methodology. 
@@ -36,9 +36,9 @@ You should be proud of the code you submit for review. Dare the quality assuranc
 
 You will be surprised on how quickly you can find an issue with your code when you start to write tests. This will make you a better developer because you will remember what went wrong and will help you swerve these pot holes. Save time in the future by not making the same mistake twice. 
 
-> *Confidence* - When your code goes out to production, you can be confident you code did not break, instead it strengthened the code base and user experenice. 
+> *Confidence* - When your code goes out to production, you can be confident you code did not break, instead it strengthened the code base and user experience. 
 
-How many times do you find yourslf on a release, with the nagging thought that you code might not work. Better yet, get called out because your code broke on production. If your code is fully tested and you have the correct tests written, you will have the peace of confidence in your code.
+How many times do you find yourslf on a release, with the nagging thought that you code might not work. Better yet, get called out because your code broke on production. If your code is fully tested and you have the correct tests written, you will have the confidence in your code.
 
 > *Documentation* - Yes! Tests document your code. 
 
