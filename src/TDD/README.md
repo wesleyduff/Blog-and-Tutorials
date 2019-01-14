@@ -22,6 +22,9 @@ Each level of the tutorial will be located in folders.
 - The first test should be just enough to make the test fail.
 - The production code written to make the test pass should be just enough production code to fulfil the test case.
 
+### Slides
+[slides](https://docs.google.com/presentation/d/11wvCRh1U74ZKbWZ6z5r6XgWZx7NIbjc-q1XYm7F_7E0/edit?usp=sharing)
+
 ## Why should we test?
 Software bugs can hurt the business. 
 The goal of any developer, Senior or higher, should be to write world class software. 
