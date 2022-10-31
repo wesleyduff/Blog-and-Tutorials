@@ -21,6 +21,7 @@ var myNewObject2 = {...myNewObject}
 /**
 * Properties of all data-types and data-structures : they are all objects
 */
+var chat ='hello';
 var person ={
   name: ["Bob", "Smith"],
   run: function() { console.log(`I am running : ${this.name[0]}`)},
@@ -31,5 +32,6 @@ var person ={
   introduceSelf() {
     console.log(`Hi! I'm ${this.name[0]}.`);
   },
+    talk: () => { console.log(this.chat)}
 };
 
