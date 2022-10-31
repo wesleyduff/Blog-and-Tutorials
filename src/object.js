@@ -21,8 +21,9 @@ var myNewObject2 = {...myNewObject}
 /**
 * Properties of all data-types and data-structures : they are all objects
 */
-const person = {
+var person ={
   name: ["Bob", "Smith"],
+  run: function() { console.log(`I am running : ${this.name[0]}`)},
   age: 32,
   bio() {
     console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old.`);
