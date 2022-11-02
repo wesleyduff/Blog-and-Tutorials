@@ -13,7 +13,7 @@ function test(){
     }
   
     const options = {
-      url: (() => this.config.endpoint)(),
+      url: () => this.config.endpoint,
       endpoint : 'yahoo.com',
       getUrl:  function(){ return this.endpoint }
     }
@@ -24,7 +24,7 @@ function test(){
 function test2(){
     
     const options = {
-      url: (() => this.root_config.endpoint)(),
+      url: () => this.root_config.endpoint,
       endpoint : 'yahoo.com',
       getUrl:  function(){ return this.endpoint }
     }
