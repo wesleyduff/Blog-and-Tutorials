@@ -1,23 +1,16 @@
-function myNewFunction(endpoint, type){
-  const config = {};
-  
-  switch(type){
-    case 'google': 
-      config.type = 'You chose Google';
-      config.endpoint = 'google.com';
-      break;
-    case 'yahoo':
-      config.tye = 'You chose yahoo';
-      config.endpoint = 'yahoo.com';
-      break;
-    default:
-      config.type = 'You do not have a preference';
-  }
-  
-  return {
-      myData : config
-   }
+function myNewFunction(endpoint='none', type='none'){
+ this.config = {type, endpoint};
 }
 
-let test1 = myNewFunction('yahoo.com', 'yahoo');
-let test2 = myNewFunction('google.com', 'google')
+let test1 = new myNewFunction('yahoo.com', 'yahoo');
+
+test1 instanceof myNewFunction
+
+let test2 = myNewFunction()
+test2 instanceof myNewFunction
+console.log(test2)
+
+let test3 = new myNewFunction()
+test3 instanceof myNewFunction
+console.log(test3)
+
